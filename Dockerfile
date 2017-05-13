@@ -1,5 +1,4 @@
 FROM java:8 as builder
-VOLUME /tmp
 ADD springboot-app /springboot-app
 WORKDIR /springboot-app
 RUN ./gradlew build
